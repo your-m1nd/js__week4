@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <title>Document</title>
+    <title>Сервис комментариев со спам-фильтром</title>
   </head>
   <body>
     <h1>Сервис комментариев со спам-фильтром</h1>
@@ -13,22 +13,22 @@
       <div id="form">
         <form id="form-comment">
           <legend class="text">Оставьте Ваш комментарий</legend>
-          <input id="name" type="name" placeholder="Введите Ваше имя" />
+          <input id="typeName" type="name" placeholder="Введите Ваше имя" />
           <input
-            id="url"
+            id="typeLink"
             type="url"
             placeholder="Введите ссылку Вашего аватара"
           />
           <legend class="text">Оставьте комментарий</legend>
-          <textarea id="comment"></textarea>
-          <input id="submit" type="submit" value="Отправить" />
+          <textarea id="commentEnter" onclick="checkSpam(str)"></textarea>
+          <input id="submit" type="submit" value="Отправить" onclick="send()" />
         </form>
         <div id="form-chat">
+          <legend class="text">Результат</legend>
           <div id="chat">
-            <div id="form-comment">
-              <legend class="text">Результат</legend>
-            </div>
+            <p id="paragraf"></p>
             <img src alt />
+            <div id="comment"></div>
           </div>
         </div>
       </div>
