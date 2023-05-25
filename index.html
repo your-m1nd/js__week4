@@ -13,26 +13,37 @@
       <div id="form">
         <form id="form-comment">
           <legend class="text">Оставьте Ваш комментарий</legend>
-          <input id="typeName" type="name" placeholder="Введите Ваше имя" />
+          <input
+            id="typeName"
+            type="text"
+            placeholder="Введите Ваше имя"
+            value
+          />
           <input
             id="typeLink"
-            type="url"
+            type="text"
             placeholder="Введите ссылку Вашего аватара"
+            value
           />
           <legend class="text">Оставьте комментарий</legend>
-          <textarea id="commentEnter" onclick="checkSpam(str)"></textarea>
-          <input id="submit" type="submit" value="Отправить" onclick="send()" />
+          <textarea id="commentEnter"></textarea>
+          <input
+            id="send"
+            type="submit"
+            value="Отправить"
+            onclick="getInputValue()"
+          />
         </form>
         <div id="form-chat">
           <legend class="text">Чат</legend>
           <div id="chat">
-            <p id="paragraf"></p>
-            <img src alt />
+            <p id="paragraf" value></p>
+            <img id="img" src alt />
             <div id="comment"></div>
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
   </body>
 </html>

@@ -1,3 +1,8 @@
+let formElement = document.getElementById('form');
+formElement.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+});
+
 
 let typeName = document.getElementById('typeName');
 let paragraf = document.getElementById('paragraf');
@@ -22,16 +27,16 @@ comment.textContent = evt.target.value;
 
 
 
-function checkSpam(str) {
-str = commentEnter.evt.target.value;
-const comment1 = str.checkSpam('buy ViAgRA now'); 
-const newComment1 = comment1.replace(ViAgRA/i, '***');
+//function checkSpam(str) {
+//str = commentEnter.evt.target.value;
+//const comment1 = str.checkSpam('buy ViAgRA now'); 
+//const newComment1 = comment1.replace(ViAgRA/i, '***');
 
-}
+//}
 
 //результат buy *** now
-const comment2 = checkSpam('free xxx'); //результат free ***
-const comment3 = checkSpam("innocent rabbit") ; //результат innocent rabbit
+//const comment2 = checkSpam('free xxx'); //результат free ***
+//const comment3 = checkSpam("innocent rabbit") ; //результат innocent rabbit
 
 
 //lowerStr.includes('viagra');
