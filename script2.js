@@ -15,6 +15,17 @@ commentEnter.addEventListener('keyup', function(evt) {
 
 })
 
+//let str = commentEnter.value;
+
+//function checkSpam(str) {
+    //let newComment1 = document.getElementById('commentEnter');
+    //let newComment11 = document.getElementById('comment');
+    //let str1 = str;
+    //let newStr1 = str1.replace('ViAgRA', '***');
+//}
+
+//const comment1 = checkSpam('buy ViAgRA now');
+
 let send = document.getElementById('send');
     send.onclick = function getInputValue() {
 
@@ -24,7 +35,21 @@ let send = document.getElementById('send');
 
     img.src = typeLink.value;
 
-    comment.textContent = commentEnter.value;
+
+    let comment1 = commentEnter.value;
+    let comment2 = commentEnter.value;
+    let comment3 = commentEnter.value;
+
+    let comment11= comment1.replace('ViAgRA', '***');
+    let comment22= comment2.replace('free xxx', '***');
+    let comment33= comment1.slice(0);
+
+
+    comment.textContent = comment11;
+   // comment.textContent = comment22;
+    //comment.textContent = commentEnter.value.replace('ViAgRA', '***');
+    //comment.textContent = commentEnter.value.replace('free xxx', '***');
+    //comment.textContent = commentEnter.value.slice(0);
 
 }
 
